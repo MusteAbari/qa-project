@@ -6,6 +6,10 @@
     {{ car.reg }}
     <br>
     {{ car.make }} {{ car.model }}
+    <br>
+    <form action="{{ url_for('update', car_id=car.car_id) }}">
+        <input type=submit value="Update">
+    </form>
     <br><br>
 {% endfor %}
 

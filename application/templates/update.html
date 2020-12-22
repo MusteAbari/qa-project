@@ -2,6 +2,14 @@
 {% block body %}
 <br><br>
 
+<h2>Original Car Details:</h2>
+{{ car.reg }}<br>
+{{ car.make }} {{ car.model }}<br>
+{{ car.mileage }}<br>
+{{ car.colour }}<br>
+{{ car.age }}<br><br>
+
+<h2>Please fill in all the details</h2>
 <form action='' method='POST'>
     {{ form.hidden_tag() }}
     {{ form.reg.label }} {{ form.reg }}<br>
