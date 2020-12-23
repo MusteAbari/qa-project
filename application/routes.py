@@ -7,8 +7,9 @@ from flask import render_template, request, redirect, url_for
 @app.route("/home")
 def home():
     all_cars = Cars.query.all()
+    all_reviews = Reviews.query.all()
     output = ""
-    return render_template("index.html", title="Home", all_cars=all_cars)
+    return render_template("index.html", title="Home", all_cars=all_cars, all_reviews=all_reviews)
 
 @app.route("/addcar", methods=["GET","POST"])
 def addcar():
@@ -51,7 +52,7 @@ def review(car_id):
         if form.validate_on_submit():
             new_review = Reviews(
                 name=form.name.data,
-                review=form.name.data,
+                review=form.review.data,
                 raiting=form.raiting.data,
                 car_id=car_id)
             db.session.add(new_review)
@@ -62,7 +63,9 @@ def review(car_id):
 
 @app.route("/delete/<int:car_id>", methods=["GET", "POST"])
 def delete(car_id):
+    review = Reviews.query.filter_by(car_id=car_id).first()
     car = Cars.query.filter_by(car_id=car_id).first()
+    db.session.delete(review)
     db.session.delete(car)
     db.session.commit()
     return redirect(url_for("home"))

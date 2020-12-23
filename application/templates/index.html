@@ -3,10 +3,22 @@
 
 <h2>Here are a list of cars</h2>
 {% for car in all_cars %}
-    {{ car.reg }}
+    Car Reg: {{ car.reg }}
     <br>
-    {{ car.make }} {{ car.model }}
+    {{ car.colour }} {{ car.make }} - {{ car.model }}
     <br>
+    Mileage: {{ car.mileage }}<br>
+    Age of Car: {{ car.age }}
+    <br>
+    {% for review in all_reviews %}
+        {% if review.car_id == car.car_id %}
+            <h4>Reviews</h4>
+            Review Name: {{ review.name }}<br>
+            Review: {{ review.review }}<br>
+            Raiting: {{ review.raiting }}/10<br>
+            Date of Review: {{ review.review_date }}<br>
+        {% endif %}
+    {% endfor %}
     <form action="{{ url_for('update', car_id=car.car_id) }}">
         <input type=submit value="Update">
     </form>

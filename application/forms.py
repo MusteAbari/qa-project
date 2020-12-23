@@ -14,6 +14,6 @@ class CarForm(FlaskForm):
 class ReviewForm(FlaskForm):
     name = StringField('Name of Reviewer', validators=[DataRequired()])
     review = StringField('Your Car Review', validators=[DataRequired()])
-    raiting = IntegerField('Raiting out of 10', validatorsvalidators=[NumberRange(min=1, max=10, message='Invalid length')])
+    raiting = IntegerField('Raiting out of 10', validators=[NumberRange(min=1, max=10, message='Invalid length')])
     submit = SubmitField('Leave Review')
 
