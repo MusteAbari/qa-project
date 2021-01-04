@@ -9,7 +9,7 @@ class Cars(db.Model):
     mileage = db.Column(db.Integer, nullable=False)
     colour = db.Column(db.String(10), nullable=False)
     age = db.Column(db.Integer, nullable=False)
-    reviews = db.relationship('Reviews', backref='car')
+    reviews = db.relationship('Reviews', backref='car', cascade='all, delete')
 
 class Reviews(db.Model):
     review_id = db.Column(db.Integer, primary_key=True)

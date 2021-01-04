@@ -33,11 +33,11 @@ def update(car_id):
     form = CarForm()
     car = Cars.query.filter_by(car_id=car_id).first()
     if request.method == "POST":
-        car.reg = form.reg.data,
-        car.make = form.make.data,
-        car.model = form.model.data,
-        car.mileage = form.mileage.data,
-        car.colour = form.colour.data,
+        car.reg = form.reg.data
+        car.make = form.make.data
+        car.model = form.model.data
+        car.mileage = form.mileage.data
+        car.colour = form.colour.data
         car.age = form.age.data
         db.session.commit()
         return redirect(url_for("home"))
@@ -63,9 +63,7 @@ def review(car_id):
 
 @app.route("/delete/<int:car_id>", methods=["GET", "POST"])
 def delete(car_id):
-    review = Reviews.query.filter_by(car_id=car_id).first()
     car = Cars.query.filter_by(car_id=car_id).first()
-    db.session.delete(review)
     db.session.delete(car)
     db.session.commit()
     return redirect(url_for("home"))
