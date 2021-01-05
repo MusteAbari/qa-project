@@ -104,5 +104,43 @@ Here is a screenshot below of my coverage
 ![](images/testCov.png)
 
 # Front-end
+This is the front end design of my website, it is a very basic HTML build with no styling
+
+Home Page
+This is the read functionality in CRUD
+
+![](images/viewCars.png)
+
+
+Add a car
+This is my create functionality
+
+![](images/addCar.png)
+
+
+Update a Car
+This is my update functionality
+
+![](images/updateCar.png)
+
+Delete a car
+This is my delete functionality
+
+![](images/deleteCar.png)
+
+
+# Known Issues
+Currently a user can add a review but they arent able to edit or delete their review, the only way to delete the review is by deleting the car
+When leaving a raiting on the car, i added a number validator between 1-10, however i havent put a message there so if the user was to enter 11 nothing will which could give the impression that the website isnt responding
+
+
+# Future Improvements
+
+	• CSS
+	• Allow Reviewers to have accounts
+	• Allow Car Owners to have an account
+	• Filter by Make, Model, Colour
+	Add Pictures
+
 
 
