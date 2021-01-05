@@ -144,8 +144,8 @@ This is my delete functionality
 
 
 # Known Issues
-Currently a user can add a review but they arent able to edit or delete their review, the only way to delete the review is by deleting the car
-When leaving a raiting on the car, i added a number validator between 1-10, however i havent put a message there so if the user was to enter 11 nothing will which could give the impression that the website isnt responding
+- Currently a user can add a review but they arent able to edit or delete their review, the only way to delete the review is by deleting the car
+- When leaving a raiting on the car, i added a number validator between 1-10, however i havent put a message there so if the user was to enter 11 nothing will which could give the impression that the website isnt responding
 
 
 # Future Improvements
