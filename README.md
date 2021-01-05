@@ -4,6 +4,7 @@
 My objective for this project was to create an application that exercises CRUD (Create Read Update and Delete) functionalities whilst making use of the technologies and the training I've learnt in the past six weeks.
 
 The requirements are as followed:
+
 	• A project tracking software (Trello Board)
 	• A Relational database used to store data persistently for the project(2 or more tables)
 	• Clear Documentation of my design phase that describes the architecture that'll be used for the project and also a detailed Risk assessment
@@ -39,5 +40,69 @@ By allowing car owners to edit the details of their cars and by giving them the 
 
 # Architecture
 Database Structure
+
+![](images/InitialERD.png)
+
+This picture above shows my first attempt for the ERD table design for this project, the below picture shows my finished product of the ERD table. My database design has a One to Many relationship between Cars and Reviews, which allows multiple reviews on one car.
+
+![](images/finalERD.png)
+
+
+Continuoue Integration Pipeline
+
+The picture below shows my CI Pipeline. 
+
+![](images/ciPipeline.png)
+
+
+# Project Tracking
+
+I used Trello to track the progress of the project 
+Here's a link to my board.
+https://trello.com/b/m2DuZPr2/abarimotors
+
+Here's a screenshot to show my Kanban board
+
+![](images/trelloboard.png)
+
+This board has been designed in a way that when a task is added it is placed on the far left hand side and as the task gets completed it moves to the right hand side.
+
+A list of the headings are
+Project Requirements
+User Stories
+To Do
+Doing
+Testing
+Done
+
+
+# Risk Assessment
+
+
+
+
+![](images/firstRiskAssessment.png)
+
+The picture above shows the first draft of my risk asssessment, the picture below shows the final draft of my risk assessment, as i went along the project i was able to spot risk that i couldnt see at the start of the project
+
+![](images/FinalRisk.png)
+
+
+# Testing
+
+I have used pytest to run test on my website.
+I used Jenkins to perform an automated test
+I connected it to GitHub via Webhooks so whenever I push my code to GitHub my test is run automatically
+
+Below is an image of Jenkins running pytest automatically
+
+![](images/jenkinsTest.png)
+
+I also ran test manually so i could see the coverage report on my code
+Here is a screenshot below of my coverage
+
+![](images/testCov.png)
+
+# Front-end
 
 
