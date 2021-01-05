@@ -53,7 +53,7 @@ By allowing car owners to edit the details of their cars and by giving them the 
 
 
 # Architecture
-## Database Structure
+### Database Structure
 
 ![](images/InitialERD.png)
 
@@ -62,7 +62,7 @@ This picture above shows my first attempt for the ERD table design for this proj
 ![](images/finalERD.png)
 
 
-## Continuoue Integration Pipeline
+### Continuoue Integration Pipeline
 
 The picture below shows my CI Pipeline. 
 
