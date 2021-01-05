@@ -1,5 +1,19 @@
 # qa-project
 
+### Table of Contents
+- [Brief](#brief)
+- [Architecture](#architecture)
+	- [Database Structure](#database-structure)
+	- [Continuoue Integration Pipeline](#continuoue-integration-pipeline)
+- [Project Tracking](#project-tracking)
+- [Risk Assessment](#risk-assessment)
+- [Testing](#testing)
+- [Fron End](#front-end)
+- [Known Issues](#known-issues)
+- [Further Improvements](#further-improvements)
+- [Author](#author)
+
+
 # Brief
 My objective for this project was to create an application that exercises CRUD (Create Read Update and Delete) functionalities whilst making use of the technologies and the training I've learnt in the past six weeks.
 
@@ -39,7 +53,7 @@ By allowing car owners to edit the details of their cars and by giving them the 
 
 
 # Architecture
-Database Structure
+## Database Structure
 
 ![](images/InitialERD.png)
 
@@ -48,7 +62,7 @@ This picture above shows my first attempt for the ERD table design for this proj
 ![](images/finalERD.png)
 
 
-Continuoue Integration Pipeline
+## Continuoue Integration Pipeline
 
 The picture below shows my CI Pipeline. 
 
@@ -142,5 +156,7 @@ When leaving a raiting on the car, i added a number validator between 1-10, howe
 	• Filter by Make, Model, Colour
 	Add Pictures
 
+# Author
+Mustapha Abari-Jimoh
 
 
