@@ -92,7 +92,7 @@ Done
 
 # Risk Assessment
 
-
+https://qalearning-my.sharepoint.com/:x:/r/personal/mabari-jimoh_qa_com/_layouts/15/Doc.aspx?sourcedoc=%7BCA69B76B-C32D-4394-9DE3-3B2A20B4B81B%7D&file=Risk%20Assessment%201.xlsx&action=edit&mobileredirect=true&wdNewAndOpenCt=1609819567873&ct=1609819567873&wdPreviousSession=eef6863f-2ebc-4586-a4e8-3fac8198d251&wdOrigin=OFFICECOM-WEB.START.UPLOAD
 
 
 ![](images/firstRiskAssessment.png)
