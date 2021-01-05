@@ -150,11 +150,11 @@ When leaving a raiting on the car, i added a number validator between 1-10, howe
 
 # Future Improvements
 
-	• CSS
-	• Allow Reviewers to have accounts
-	• Allow Car Owners to have an account
-	• Filter by Make, Model, Colour
-	Add Pictures
+	- CSS
+	- Allow Reviewers to have accounts
+	- Allow Car Owners to have an account
+	- Filter by Make, Model, Colour
+	- Add Pictures
 
 # Author
 Mustapha Abari-Jimoh
