@@ -37,4 +37,7 @@ By allowing users to view cars that the owners have put up, then I will be able 
 By allowing car owners to edit the details of their cars and by giving them the ability to delete a car, I will be able to justify the 'Update' and 'Delete' in CRUD.
 
 
+# Architecture
+Database Structure
+
 
