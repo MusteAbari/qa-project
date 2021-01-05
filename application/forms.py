@@ -9,7 +9,7 @@ class CarForm(FlaskForm):
     mileage = StringField('Car Mileage', validators=[DataRequired()])
     colour = StringField('Car Colour', validators=[DataRequired()])
     age = IntegerField('Cars Age', validators=[NumberRange(min=2000, max=2021, message='Invalid length')])
-    submit = SubmitField('Add Car')
+    submit = SubmitField('Submit')
 
 class ReviewForm(FlaskForm):
     name = StringField('Name of Reviewer', validators=[DataRequired()])
