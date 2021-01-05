@@ -58,7 +58,7 @@ def review(car_id):
             db.session.add(new_review)
             db.session.commit()
             return redirect(url_for("home"))
-    return render_template("review.html", form=form, title="Update Review", review=review)
+    return render_template("review.html", form=form, title="Add a Review", review=review)
 
 
 @app.route("/delete/<int:car_id>", methods=["GET", "POST"])
